@@ -8,15 +8,15 @@ class Morris.Area extends Morris.Line
     areaColors: []
 
   constructor: (options) ->
-    return new Morris.Area(options) unless (@ instanceof Morris.Area)
     areaOptions = Morris.extend {}, areaDefaults, options
+    super(areaOptions)
+    return new Morris.Area(options) unless (@ instanceof Morris.Area)
 
     @cumulative = not areaOptions.behaveLikeLine
 
     if areaOptions.fillOpacity is 'auto'
       areaOptions.fillOpacity = if areaOptions.behaveLikeLine then .8 else 1
 
-    super(areaOptions)
 
   # calculate series data point coordinates
   #

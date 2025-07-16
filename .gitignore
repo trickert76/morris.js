@@ -5,3 +5,5 @@ spec/viz/diff/
 bower_components
 .idea
 package-lock.json
+/.project
+/dist

@@ -1,7 +1,7 @@
 class Morris.Bar extends Morris.Grid
   constructor: (options) ->
-    return new Morris.Bar(options) unless (@ instanceof Morris.Bar)
     super(Morris.extend {}, options, parseTime: false)
+    return new Morris.Bar(options) unless (@ instanceof Morris.Bar)
 
   init: ->
     @cumulative = @options.stacked
