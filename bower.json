@@ -9,9 +9,9 @@
   },
   "devDependencies": {
     "mocha": "~1.17.1",
-    "chai": "~1.9.0",
-    "chai-jquery": "~1.2.1",
-    "sinon": "http://sinonjs.org/releases/sinon-1.8.1.js",
-    "sinon-chai": "~2.5.0"
+    "chai": "~1.10.0",
+    "chai-jquery": "~1.2.3",
+    "sinon": "http://sinonjs.org/releases/sinon-1.17.7.js",
+    "sinon-chai": "~2.14.0"
   }
 }
