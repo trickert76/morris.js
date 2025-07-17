@@ -47,7 +47,6 @@ class Morris.Donut extends Morris.EventEmitter
   # Create and render a donut chart.
   #
   constructor: (options) ->
-    super(options)
     return new Morris.Donut(options) unless (@ instanceof Morris.Donut)
     @options = Morris.extend {}, @defaults, options
 
@@ -279,7 +278,6 @@ class Morris.Donut extends Morris.EventEmitter
 # @private
 class Morris.DonutSegment extends Morris.EventEmitter
   constructor: (@cx, @cy, @inner, @outer, p0, p1, @color, @backgroundColor, @index, @raphael, @options) ->
-    super(options)
     @sin_p0 = Math.sin(p0)
     @cos_p0 = Math.cos(p0)
     @sin_p1 = Math.sin(p1)
